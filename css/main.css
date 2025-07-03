@@ -1,0 +1,93 @@
+:root {
+  --primary-bg: #ebd3f8;
+  --secondary-bg: #eeeeee;
+  --accent-color: #7a1cac;
+  --light-text: #ad49e1;
+  --title-color: #7b2083;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  background-color: var(--primary-bg);
+  color: var(--light-text);
+}
+
+a,
+.nav-link {
+  color: var(--light-text);
+}
+
+.navbar {
+  background-color: #210f37;
+}
+
+.navbar .nav-link:hover,
+.navbar-brand {
+  color: var(--accent-color) !important;
+}
+
+.hero {
+  background: #2e073f;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.btn-cta,
+.btn-primary {
+  background-color: var(--accent-color);
+  border: none;
+  color: #fff;
+}
+
+.btn-cta:hover,
+.btn-primary:hover {
+  background-color: #ad49e1;
+}
+
+.bg-light {
+  background-color: var(--secondary-bg) !important;
+}
+
+.text-primary {
+  color: var(--accent-color) !important;
+}
+.text-dark {
+  color: var(--title-color) !important;
+}
+footer {
+  background-color: #2e073f;
+  color: var(--light-text);
+}
+.carousel img {
+  object-fit: cover;
+  height: 400px;
+}
+.tool-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #9b59b6; /* Ungu neon */
+  box-shadow: 0 0 10px #9b59b6, 0 0 20px #9b59b6;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  background-color: #fff;
+  padding: 10px;
+}
+
+.skill-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.skill-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.darken-img {
+  filter: brightness(50%);
+}
